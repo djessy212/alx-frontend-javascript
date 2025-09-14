@@ -8,7 +8,7 @@ interface Teacher {
   [key: string]: any;
 }
 
-// Define the Directors interface that extends Teacher
+// ✅ Define the Directors interface that extends Teacher
 interface Directors extends Teacher {
   numberOfReports: number;
 }
