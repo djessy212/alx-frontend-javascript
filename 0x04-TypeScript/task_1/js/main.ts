@@ -1,39 +1,18 @@
-interface Student {
+interface Teacher {
   firstName: string;
   lastName: string;
-  age: number;
+  fullTimeEmployee: boolean;
   location: string;
+  contract: boolean;
 }
 
-// Create two students
-const student1: Student = {
-  firstName: "Alice",
-  lastName: "Smith",
-  age: 20,
-  location: "New York"
+// Define the object in the desired order
+const teacher3: Teacher = {
+  contract: false,
+  firstName: 'John',
+  fullTimeEmployee: false,
+  lastName: 'Doe',
+  location: 'London',
 };
 
-const student2: Student = {
-  firstName: "Bob",
-  lastName: "Johnson",
-  age: 22,
-  location: "California"
-};
-
-// Add students to array
-const studentsList: Student[] = [student1, student2];
-
-// Create the table
-const table = document.createElement("table");
-table.border = "1";
-
-// Create header row
-const headerRow = table.insertRow();
-const nameHeader = document.createElement("th");
-nameHeader.textContent = "First Name";
-const locationHeader = document.createElement("th");
-locationHeader.textContent = "Location";
-headerRow.appendChild(nameHeader);
-headerRow.appendChild(locationHeader);
-
-// Add a row for
+console.log(teacher3);
