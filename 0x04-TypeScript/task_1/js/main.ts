@@ -14,6 +14,7 @@ interface Directors extends Teacher {
 }
 
 // Define the printTeacherFunction interface
+["function printTeacher("]
 interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
