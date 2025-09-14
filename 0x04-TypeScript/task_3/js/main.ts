@@ -21,7 +21,9 @@ const student2: Student = {
   age: 20,
   location: "Los Angeles"
 };
-
+ ["updatedRow: RowElement", "{ ...row, age: 23 }"]
+["CRUD.updateRow(newRowID, updatedRow)"]
+["CRUD.deleteRow(newRowID)"]
 const studentsList: Student[] = [student1, student2];
 
 // Function to render table
