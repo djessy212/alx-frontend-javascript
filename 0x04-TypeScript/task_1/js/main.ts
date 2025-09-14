@@ -5,7 +5,7 @@ interface Teacher {
   fullTimeEmployee: boolean;
   location: string;
   yearsOfExperience?: number;
-  [key: string]: any; // allows additional properties
+  [key: string]: any;
 }
 
 // Define the Directors interface that extends Teacher
