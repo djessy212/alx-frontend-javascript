@@ -1,4 +1,5 @@
 // Define the Teacher interface
+["{ firstName, lastName }"]
 interface Teacher {
   readonly firstName: string;
   readonly lastName: string;
