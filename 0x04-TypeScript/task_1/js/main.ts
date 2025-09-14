@@ -1,8 +1,10 @@
 interface Teacher {
-  firstName: string;
-  lastName: string;
-  location: string;
+  readonly firstName: string;
+  readonly lastName: string;
   fullTimeEmployee: boolean;
+  location: string;
+  yearsOfExperience?: number;
+  [key: string]: any; // allows any other attribute
 }
 
 interface Directors extends Teacher {
@@ -15,6 +17,7 @@ const director1: Directors = {
   location: 'London',
   fullTimeEmployee: true,
   numberOfReports: 17,
+  department: 'Math', // extra property allowed
 };
 
 console.log(director1);
