@@ -1,5 +1,4 @@
 // Define the Teacher interface
-["{ firstName, lastName }"]
 interface Teacher {
   readonly firstName: string;
   readonly lastName: string;
@@ -15,8 +14,6 @@ interface Directors extends Teacher {
 }
 
 // Define the printTeacherFunction interface
-["return `${firstName}. ${lastName}`"]
-["function printTeacher("]
 interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
@@ -35,5 +32,26 @@ const director1: Directors = {
   numberOfReports: 17,
 };
 
-console.log(director1); // Logs the director object
-console.log(printTeacher("John", "Doe")); // Logs: J. Doe
+console.log(director1);
+console.log(printTeacher("John", "Doe")); // Output: J. Doe
+
+// ---------- New Section: StudentClass ----------
+
+// Interface for the class methods
+interface StudentClassInterface {
+  workOnHomework(): string;
+  displayName(): string;
+}
+
+// Interface for the class constructor
+interface StudentConstructor {
+  new (firstName: string, lastName: string): StudentClassInterface;
+}
+
+// Class implementation
+class StudentClass implements StudentClassInterface {
+  private firstName: string;
+  private lastName: string;
+
+  constructor(firstName: string, lastName: string) {
+    this.firstName =
