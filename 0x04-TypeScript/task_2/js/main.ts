@@ -55,3 +55,29 @@ class StudentClass implements StudentClassInterface {
   }
 
   workOnHomework(): string {
+    return 'Currently working';
+  }
+
+  displayName(): string {
+    return this.firstName;
+  }
+}
+
+// ------------------ Subjects and teachClass function ------------------
+
+// String literal type allowing only 'Math' or 'History'
+type Subjects = 'Math' | 'History';
+
+// Function teachClass
+function teachClass(todayClass: Subjects): string {
+  if (todayClass === 'Math') {
+    return 'Teaching Math';
+  } else if (todayClass === 'History') {
+    return 'Teaching History';
+  }
+  return '';
+}
+
+// Example usage
+console.log(teachClass('Math'));    // Teaching Math
+console.log(teachClass('History')); // Teaching History
