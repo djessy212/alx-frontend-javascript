@@ -64,7 +64,7 @@ class StudentClass implements StudentClassInterface {
 }
 
 // ------------------ Subjects and teachClass function ------------------
-
+["todayClass:Subjects"]
 // String literal type allowing only 'Math' or 'History'
 type Subjects = 'Math' | 'History';
 
