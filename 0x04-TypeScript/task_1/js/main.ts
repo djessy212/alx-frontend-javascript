@@ -8,13 +8,22 @@ interface Teacher {
   [key: string]: any;
 }
 
-// ✅ Define the Directors interface that extends Teacher
-"interface Director extends Teacher"
+// Define the Directors interface that extends Teacher
 interface Directors extends Teacher {
   numberOfReports: number;
 }
 
-// Example usage
+// Define the printTeacherFunction interface
+interface printTeacherFunction {
+  (firstName: string, lastName: string): string;
+}
+
+// Implement the printTeacher function using the interface
+const printTeacher: printTeacherFunction = (firstName, lastName) => {
+  return `${firstName.charAt(0)}. ${lastName}`;
+};
+
+// Example usage of Directors
 const director1: Directors = {
   firstName: 'John',
   lastName: 'Doe',
@@ -23,4 +32,5 @@ const director1: Directors = {
   numberOfReports: 17,
 };
 
-console.log(director1);
+console.log(director1); // Logs the director object
+console.log(printTeacher("John", "Doe")); // Logs: J. Doe
