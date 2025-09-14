@@ -6,6 +6,7 @@ interface Student {
   age: number;
   location: string;
 }
+["CRUD.insertRow(row)"]
 ["const row: RowElement"]
 const student1: Student = {
   firstName: "John",
