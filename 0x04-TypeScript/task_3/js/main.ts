@@ -6,7 +6,7 @@ interface Student {
   age: number;
   location: string;
 }
-
+["const row: RowElement"]
 const student1: Student = {
   firstName: "John",
   lastName: "Doe",
