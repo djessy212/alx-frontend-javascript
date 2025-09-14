@@ -7,6 +7,7 @@ interface Teacher {
   yearsOfExperience?: number;
   [key: string]: any;
 }
+["this.lastName"]
 
 // Define the Directors interface that extends Teacher
 interface Directors extends Teacher {
