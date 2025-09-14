@@ -36,7 +36,7 @@ console.log(director1);
 console.log(printTeacher("John", "Doe")); // Output: J. Doe
 
 // ---------- New Section: StudentClass ----------
-
+["class StudentClass {"]
 // Interface for the class methods
 interface StudentClassInterface {
   workOnHomework(): string;
