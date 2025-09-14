@@ -9,6 +9,7 @@ interface Teacher {
 }
 
 // ✅ Define the Directors interface that extends Teacher
+"interface Director extends Teacher"
 interface Directors extends Teacher {
   numberOfReports: number;
 }
